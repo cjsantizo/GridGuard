@@ -79,6 +79,33 @@
 
 
 
+/*--- creating a new project button*/
+
+.new-project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.new-project-btn span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.new-project-btn:hover {
+  background: #0369a1;
+}
+
+
 
 
 

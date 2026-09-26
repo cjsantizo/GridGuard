@@ -11,13 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="css/base.css">
-
+    
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <!--MAP STARTS HERE-->
 
 
 
-<!-- The body section contains all elements visible to the user -->
+<!-- map -->
 <body>
     
     <div id="map" style="height: 400px;"></div>
@@ -74,10 +75,8 @@
 
                 
             </select>
-                
-            
         </label>
-        
+
             <label>month
             <select id="f-start-month">
                 <option value="1" selected>Jan</option>
@@ -94,24 +93,7 @@
                 <option value="12">Dec</option>
             </select>
             </label>
-        <!--
-            <label>End month
-            <select id="f-end-month">
-                <option value="1">Jan</option>
-                <option value="2">Feb</option>
-                <option value="3">Mar</option>
-                <option value="4">Apr</option>
-                <option value="5">May</option>
-                <option value="6">Jun</option>
-                <option value="7">Jul</option>
-                <option value="8">Aug</option>
-                <option value="9">Sep</option>
-                <option value="10">Oct</option>
-                <option value="11">Nov</option>
-                <option value="12" selected>Dec</option>
-            </select>
-            </label>
-        -->
+       
             <label>Year
             <input id="f-year" type="number" min="2024" max="2040" value="2027" />
             </label>
@@ -122,52 +104,144 @@
 
 
 
+    
     <!--button starts here-->
-    <button class="button">button</button>
+    <button class="new-project-btn" id="newProjectBtn"><span>+</span> New Project</button>
+
+      <!-- the popup which javascript id is here  calls to it -->
+      <dialog id="projectDialog">
+        <div class="header">
+          <h3>Add New Project</h3>
+          <p>Enter utility construction details for grid overlap analysis.</p>
+        </div>
+      <!-- form fields-->
+        <form id="projectForm">
+          
+          <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" placeholder="e.g., Florida Power & Light" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="projectName">Project Name</label>
+            <input type="text" id="projectName" placeholder="e.g., Substation Alpha Upgrade" required>
+          </div>
+        
+          <div class="form-row">
+            <div class="form-group">
+              <label for="projectType">Type</label>
+              <select id="projectType" required>
+                <option value="">Select Type</option>
+                <option value="Substation Upgrade">Substation Upgrade</option>
+                <option value="Transmission Line Extension">Transmission Line</option>
+                <option value="Grid Hardening">Grid Hardening</option>
+                <option value="Solar Interconnection">Solar Tie-In</option>
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <label for="state">State</label>
+              <select id="state" required>
+                <option value="">Select State</option>
+                <option value="FL">Florida (FL)</option>
+                <option value="GA">Georgia (GA)</option>
+                <option value="AL">Alabama (AL)</option>
+                <option value="NC">North Carolina (NC)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="startMonth">Start Month</label>
+              <select id="startMonth" required>
+                <option value="">Select Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="startYear">Start Year</label>
+              <select id="startYear" required>
+                <option value="">Select Year</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="button" class="btn-cancel" id="cancelBtn">Cancel</button>
+            <button type="submit" class="btn-save">Save Project</button>
+          </div>
+
+        
+        </form>
+      </dialog>
+
 
     <!--List section starts here-->
-    <!-- LIST -->
-<section id="list-section">
-    <h2>Projects List</h2>
-  
-    <ul id="project-list">
-      <li class="project-row">
-        <div class="row-info">
-          <div class="row-title"><b>Duke Energy</b> — Line rebuild</div>
-          <div class="row-meta">SC · 2027-03-01 → 2027-10-01</div>
-        </div>
-        <span class="dot red"></span>
-      </li>
-  
-      <li class="project-row">
-        <div class="row-info">
-          <div class="row-title"><b>Georgia Power</b> — Substation upgrade</div>
-          <div class="row-meta">GA · 2027-05-01 → 2027-12-01</div>
-        </div>
-        <span class="dot red"></span>
-      </li>
-  
-      <li class="project-row">
-        <div class="row-info">
-          <div class="row-title"><b>Georgia Power</b> — New 230 kV line</div>
-          <div class="row-meta">GA · 2028-01-01 → 2028-09-01</div>
-        </div>
-        <span class="dot yellow"></span>
-      </li>
-  
-      <li class="project-row">
-        <div class="row-info">
-          <div class="row-title"><b>Duke Energy</b> — Transformer replacement</div>
-          <div class="row-meta">NC · 2027-02-01 → 2027-06-01</div>
-        </div>
-        <span class="dot green"></span>
-      </li>
-    </ul>
-  </section>
-  <!--List ends here-->
+    
+    <section id="list-section">
+        <h2>Projects List</h2>
+      
+        <ul id="project-list">
+          <li class="project-row">
+            <div class="row-info">
+              <div class="row-title"><b>Duke Energy</b> — Line rebuild</div>
+              <div class="row-meta">SC · 2027-03-01 → 2027-10-01</div>
+            </div>
+            <span class="dot red"></span>
+          </li>
+      
+          <li class="project-row">
+            <div class="row-info">
+              <div class="row-title"><b>Georgia Power</b> — Substation upgrade</div>
+              <div class="row-meta">GA · 2027-05-01 → 2027-12-01</div>
+            </div>
+            <span class="dot red"></span>
+          </li>
+      
+          <li class="project-row">
+            <div class="row-info">
+              <div class="row-title"><b>Georgia Power</b> — New 230 kV line</div>
+              <div class="row-meta">GA · 2028-01-01 → 2028-09-01</div>
+            </div>
+            <span class="dot yellow"></span>
+          </li>
+      
+          <li class="project-row">
+            <div class="row-info">
+              <div class="row-title"><b>Duke Energy</b> — Transformer replacement</div>
+              <div class="row-meta">NC · 2027-02-01 → 2027-06-01</div>
+            </div>
+            <span class="dot green"></span>
+          </li>
+        </ul>
+      </section>
+      <!--List ends here-->
 
 
-
+  <script src="js/form.js" defer></script>
 
 </body>
 </html>

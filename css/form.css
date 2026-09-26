@@ -159,3 +159,8 @@ dialog .btn-save:active {
     gap: 0;
   }
 }
+
+#map {
+  height: 300px;
+  width: 100%;
+}

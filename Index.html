@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+<!--MAP STARTS HERE-->
+
+
+
+<!-- The body section contains all elements visible to the user -->
+<body>
+    
+                <div id="map" style="height: 400px;"></div>
+
+            <script>
+            const map = L.map('map').setView([40.7128, -74.0060], 12);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
+            const markers = L.markerClusterGroup();
+
+            const points = [
+                [40.7128, -74.0060, "Point A"],
+                [40.7130, -74.0055, "Point B"], // very close to A
+                [40.7135, -74.0050, "Point C"], // also close
+                [40.7300, -73.9350, "Point D"], // far away
+            ];
+
+            points.forEach(([lat, lng, label]) => {
+                markers.addLayer(L.marker([lat, lng]).bindPopup(label));
+            });
+
+            map.addLayer(markers);
+            </script>
+            <!--MAP ENDS HERE-->
+
+           
+
+
+        <!-- FILTER -->
+    <div class="center-container"> 
+        <form id="filter-bar">
+            <label>State
+            <select id="f-state">
+                <option value="">All</option>
+                <option>GA</option>
+                <option>SC</option>
+                <option>NC</option>
+                <option>FL</option>
+                <option>AL</option>
+                <option>TN</option>
+            </select>
+            </label>
+        
+            <label>Where
+            <input id="f-where" type="text" placeholder="City or county" />
+            </label>
+        
+            <label>Start month
+            <select id="f-start-month">
+                <option value="1" selected>Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+            </label>
+        
+            <label>End month
+            <select id="f-end-month">
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12" selected>Dec</option>
+            </select>
+            </label>
+        
+            <label>Year
+            <input id="f-year" type="number" min="2024" max="2040" value="2027" />
+            </label>
+        
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+
+    <button class="button">button</button>
+
+    <!--List section starts here-->
+    <!-- LIST -->
+<section id="list-section">
+    <h2>Projects</h2>
+  
+    <ul id="project-list">
+      <li class="project-row">
+        <div class="row-info">
+          <div class="row-title"><b>Duke Energy</b> — Line rebuild</div>
+          <div class="row-meta">SC · 2027-03-01 → 2027-10-01</div>
+        </div>
+        <span class="dot red"></span>
+      </li>
+  
+      <li class="project-row">
+        <div class="row-info">
+          <div class="row-title"><b>Georgia Power</b> — Substation upgrade</div>
+          <div class="row-meta">GA · 2027-05-01 → 2027-12-01</div>
+        </div>
+        <span class="dot red"></span>
+      </li>
+  
+      <li class="project-row">
+        <div class="row-info">
+          <div class="row-title"><b>Georgia Power</b> — New 230 kV line</div>
+          <div class="row-meta">GA · 2028-01-01 → 2028-09-01</div>
+        </div>
+        <span class="dot yellow"></span>
+      </li>
+  
+      <li class="project-row">
+        <div class="row-info">
+          <div class="row-title"><b>Duke Energy</b> — Transformer replacement</div>
+          <div class="row-meta">NC · 2027-02-01 → 2027-06-01</div>
+        </div>
+        <span class="dot green"></span>
+      </li>
+    </ul>
+  </section>
+  <!--List ends here-->
+
+
+
+
+</body>
+</html>

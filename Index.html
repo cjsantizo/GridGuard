@@ -20,30 +20,30 @@
 <!-- The body section contains all elements visible to the user -->
 <body>
     
-                <div id="map" style="height: 400px;"></div>
+    <div id="map" style="height: 400px;"></div>
 
-            <script>
-            const map = L.map('map').setView([40.7128, -74.0060], 12);
+    <script>
+        const map = L.map('map').setView([40.7128, -74.0060], 12);
 
-            L.tileLayer('https://{s}.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png', {
-                attribution: '&copy; OpenStreetMap contributors'
-            }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
 
-            const markers = L.markerClusterGroup();
+        const markers = L.markerClusterGroup();
 
-            const points = [
-                [40.7128, -74.0060, "Point A"],
-                [40.7130, -74.0055, "Point B"], // very close to A
-                [40.7135, -74.0050, "Point C"], // also close
-                [40.7300, -73.9350, "Point D"], // far away
-            ];
+        const points = [
+            [40.7128, -74.0060, "Point A"],
+            [40.7130, -74.0055, "Point B"], // very close to A
+            [40.7135, -74.0050, "Point C"], // also close
+            [40.7300, -73.9350, "Point D"], // far away
+        ];
 
-            points.forEach(([lat, lng, label]) => {
-                markers.addLayer(L.marker([lat, lng]).bindPopup(label));
-            });
+        points.forEach(([lat, lng, label]) => {
+            markers.addLayer(L.marker([lat, lng]).bindPopup(label));
+        });
 
-            map.addLayer(markers);
-            </script>
+        map.addLayer(markers);
+    </script>
             <!--MAP ENDS HERE-->
 
            

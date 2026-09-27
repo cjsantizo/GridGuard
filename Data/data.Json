@@ -8,7 +8,8 @@
       "longitude": -82.2119
     },
     "type": "Transmission Line",
-    "start_date": "2024-01"
+    "start_month": 1,
+    "start_year": 2024
   },
   {
     "city": "Clarks Hill",
@@ -19,7 +20,8 @@
       "longitude": -82.1729
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Okatie",
@@ -30,7 +32,8 @@
       "longitude": -80.9267
     },
     "type": "Transmission Line",
-    "start_date": "2025-01"
+    "start_month": 1,
+    "start_year": 2025
   },
   {
     "city": "Jasper",
@@ -41,7 +44,8 @@
       "longitude": -80.9493
     },
     "type": "Transmission Line",
-    "start_date": "2025-01"
+    "start_month": 1,
+    "start_year": 2025
   },
   {
     "city": "Cainhoy",
@@ -52,7 +56,8 @@
       "longitude": -79.8312
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Church Creek",
@@ -63,7 +68,8 @@
       "longitude": -80.0526
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Wagener",
@@ -74,7 +80,8 @@
       "longitude": -81.3643
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Meldrim",
@@ -85,7 +92,8 @@
       "longitude": -81.3618
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   },
   {
     "city": "Savannah",
@@ -96,7 +104,8 @@
       "longitude": -81.1637
     },
     "type": "Transmission Line",
-    "start_date": "2028-01"
+    "start_month": 1,
+    "start_year": 2028
   },
   {
     "city": "Douglasville",
@@ -107,7 +116,8 @@
       "longitude": -84.7477
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Waynesboro",
@@ -118,7 +128,8 @@
       "longitude": -82.0212
     },
     "type": "Transmission Line",
-    "start_date": "2030-01"
+    "start_month": 1,
+    "start_year": 2030
   },
   {
     "city": "Villa Rica",
@@ -129,7 +140,8 @@
       "longitude": -84.92
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Winder",
@@ -140,7 +152,8 @@
       "longitude": -83.7353
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Watkinsville",
@@ -151,7 +164,8 @@
       "longitude": -83.4081
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Fortson",
@@ -162,7 +176,8 @@
       "longitude": -84.937
     },
     "type": "Substation Upgrade",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Talbotton",
@@ -173,7 +188,8 @@
       "longitude": -84.53
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   },
   {
     "city": "Barnesville",
@@ -184,7 +200,8 @@
       "longitude": -84.1561
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   },
   {
     "city": "Griffin",
@@ -195,7 +212,8 @@
       "longitude": -84.2708
     },
     "type": "Substation Upgrade",
-    "start_date": "2028-01"
+    "start_month": 1,
+    "start_year": 2028
   },
   {
     "city": "Thomaston",
@@ -206,7 +224,8 @@
       "longitude": -84.3333
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   },
   {
     "city": "Bainbridge",
@@ -217,7 +236,8 @@
       "longitude": -84.5738
     },
     "type": "Transmission Line",
-    "start_date": "2028-01"
+    "start_month": 1,
+    "start_year": 2028
   },
   {
     "city": "Thomasville",
@@ -228,7 +248,8 @@
       "longitude": -83.9788
     },
     "type": "Transmission Line",
-    "start_date": "2028-01"
+    "start_month": 1,
+    "start_year": 2028
   },
   {
     "city": "Jackson",
@@ -239,7 +260,8 @@
       "longitude": -83.9625
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Hazlehurst",
@@ -250,7 +272,8 @@
       "longitude": -82.5994
     },
     "type": "Substation Upgrade",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Sandersville",
@@ -261,7 +284,8 @@
       "longitude": -82.8097
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Frogmore",
@@ -272,7 +296,8 @@
       "longitude": -80.5762
     },
     "type": "Transmission Line",
-    "start_date": "2024-01"
+    "start_month": 1,
+    "start_year": 2024
   },
   {
     "city": "Bluffton",
@@ -283,7 +308,8 @@
       "longitude": -80.8604
     },
     "type": "Transmission Line",
-    "start_date": "2022-01"
+    "start_month": 1,
+    "start_year": 2022
   },
   {
     "city": "Gainesville",
@@ -294,7 +320,8 @@
       "longitude": -92.4283
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Middletown",
@@ -305,7 +332,8 @@
       "longitude": -85.5188
     },
     "type": "Transmission Line",
-    "start_date": "2028-01"
+    "start_month": 1,
+    "start_year": 2028
   },
   {
     "city": "Pineville",
@@ -316,7 +344,8 @@
       "longitude": -83.6994
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Union Springs",
@@ -327,7 +356,8 @@
       "longitude": -85.7142
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   },
   {
     "city": "Southport",
@@ -338,7 +368,8 @@
       "longitude": -85.6406
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Lancaster",
@@ -349,7 +380,8 @@
       "longitude": -80.7037
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Monroe",
@@ -360,7 +392,8 @@
       "longitude": -80.5497
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Concord",
@@ -371,7 +404,8 @@
       "longitude": -80.5853
     },
     "type": "Transmission Line",
-    "start_date": "2028-01"
+    "start_month": 1,
+    "start_year": 2028
   },
   {
     "city": "Greenville",
@@ -382,7 +416,8 @@
       "longitude": -82.3856
     },
     "type": "Transmission Line",
-    "start_date": "2031-01"
+    "start_month": 1,
+    "start_year": 2031
   },
   {
     "city": "Spartanburg",
@@ -393,7 +428,8 @@
       "longitude": -81.9247
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Shelby",
@@ -404,7 +440,8 @@
       "longitude": -81.5453
     },
     "type": "Substation Upgrade",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "LaGrange",
@@ -415,7 +452,8 @@
       "longitude": -85.0316
     },
     "type": "Transmission Line",
-    "start_date": "2028-01"
+    "start_month": 1,
+    "start_year": 2028
   },
   {
     "city": "Anniston",
@@ -426,7 +464,8 @@
       "longitude": -85.8316
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Selma",
@@ -437,7 +476,8 @@
       "longitude": -87.0211
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   },
   {
     "city": "Tuscaloosa",
@@ -448,7 +488,8 @@
       "longitude": -87.5692
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   },
   {
     "city": "Warrenton",
@@ -459,7 +500,8 @@
       "longitude": -82.6607
     },
     "type": "Transmission Line",
-    "start_date": "2027-01"
+    "start_month": 1,
+    "start_year": 2027
   },
   {
     "city": "Hartwell",
@@ -470,7 +512,8 @@
       "longitude": -82.9346
     },
     "type": "Transmission Line",
-    "start_date": "2030-01"
+    "start_month": 1,
+    "start_year": 2030
   },
   {
     "city": "Eastman",
@@ -481,7 +524,8 @@
       "longitude": -83.1785
     },
     "type": "Transmission Line",
-    "start_date": "2030-01"
+    "start_month": 1,
+    "start_year": 2030
   },
   {
     "city": "Fort Valley",
@@ -492,6 +536,7 @@
       "longitude": -83.8874
     },
     "type": "Transmission Line",
-    "start_date": "2029-01"
+    "start_month": 1,
+    "start_year": 2029
   }
 ]

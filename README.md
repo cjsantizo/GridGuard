@@ -235,4 +235,4 @@ You will need:
 
 ```bash
 git clone <repository-url>
-cd GridGuard-Mock-1
+cd GridGuard-Main

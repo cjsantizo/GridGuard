@@ -355,7 +355,21 @@ function displayProjects(matchingProjects, selectedType) {
                     style="background-color: ${color};"
                 ></span>
             `;
+            listItem.addEventListener('click', () => {
+            // 1. Smoothly pan and zoom map over the project coordinates
+            map.flyTo([project.latitude, project.longitude], 14, { duration: 1.2 });
+                // 2. Locate the marker on the map
+                let marker = currentMarkers.find(m => 
+                    m.getLatLng && 
+                    m.getLatLng().lat === project.latitude && 
+                    m.getLatLng().lng === project.longitude
+                );
 
+                // 3. Open its popup card
+                if (marker) {
+                    marker.openPopup();
+                }
+            });
             projectList.appendChild(listItem);
 
         });
@@ -430,7 +444,20 @@ function addProjectToList(project) {
             style="background-color: ${color};"
         ></span>
     `;
+    listItem.addEventListener('click', () => {
 
+    map.flyTo([project.latitude, project.longitude], 14, { duration: 1.2 });
+        
+    let marker = currentMarkers.find(m => 
+        m.getLatLng && 
+        m.getLatLng().lat === project.latitude && 
+        m.getLatLng().lng === project.longitude
+    );
+
+        if (marker) {
+            marker.openPopup();
+    }
+    });
     projectList.appendChild(listItem);
 }
 

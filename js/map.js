@@ -2,62 +2,9 @@
 // FAKE PROJECT DATA
 // ============================================================
 
-const projects = window.gridguardProjects = [
+let projects = [];
 
-    {
-        id: 1,
-        projectname: "Miami Substation Upgrade",
-        companyname: "Florida Power & Light",
-        type: "Substation Upgrade",
-        state: "FL",
-        city: "Miami",
-        latitude: 25.7617,
-        longitude: -80.1918,
-        startMonth: "03",
-        startYear: 2027
-    },
-
-    {
-        id: 2,
-        projectname: "Miami Grid Hardening",
-        companyname: "Florida Power & Light",
-        type: "Grid Hardening",
-        state: "FL",
-        city: "Miami",
-        latitude: 25.7750,
-        longitude: -80.2000,
-        startMonth: "03",
-        startYear: 2027
-    },
-
-    {
-        id: 3,
-        projectname: "Charlotte Transmission Extension",
-        companyname: "Duke Energy",
-        type: "Transmission Line Extension",
-        state: "NC",
-        city: "Charlotte",
-        latitude: 35.2271,
-        longitude: -80.8431,
-        startMonth: "05",
-        startYear: 2027
-    },
-
-    {
-        id: 4,
-        projectname: "Atlanta Grid Hardening",
-        companyname: "Georgia Power",
-        type: "Grid Hardening",
-        state: "GA",
-        city: "Atlanta",
-        latitude: 33.7490,
-        longitude: -84.3880,
-        startMonth: "08",
-        startYear: 2027
-    }
-
-];
-
+window.gridguardProjects = projects;
 
 // ============================================================
 // MAIN MAP
@@ -488,3 +435,36 @@ function addProjectToList(project) {
 }
 
 window.addProjectToList = addProjectToList;
+
+async function loadProjects() {
+  try {
+    const response = await fetch('http://127.0.0.1:5000/api/projects');
+
+    if (!response.ok) {
+      throw new Error('Failed to load projects.');
+    }
+
+    const data = await response.json();
+
+    projects = data.map(project => ({
+      id: project.id,
+      projectname: project.project_name,
+      companyname: project.company_name,
+      type: project.project_type,
+      state: project.state,
+      city: project.city,
+      latitude: project.latitude,
+      longitude: project.longitude,
+      startMonth: String(project.start_month).padStart(2, '0'),
+      startYear: project.start_year
+    }));
+
+    window.gridguardProjects = projects;
+
+    console.log('Projects loaded from database:', projects);
+  } catch (error) {
+    console.error('Error loading projects:', error);
+  }
+}
+
+loadProjects();

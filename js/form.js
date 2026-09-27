@@ -143,34 +143,37 @@ form.addEventListener('submit', async (e) => {
         // ==========================================
 
         const project = {
-
-            id: Date.now(),
-
-            projectname: projectname,
-
-            companyname: companyname,
-
-            type: type,
-
-            state: state,
-
-            city: location.city,
-
-            latitude: selectedCoordinates.lat,
-
-            longitude: selectedCoordinates.lng,
-
-            startMonth: startMonth,
-
-            startYear: Number(startYear)
+          projectname,
+          companyname,
+          type,
+          state,
+          city: location.city,
+          latitude: selectedCoordinates.lat,
+          longitude: selectedCoordinates.lng,
+          startMonth,
+          startYear: Number(startYear)
         };
+
+        const response = await fetch('http://127.0.0.1:5000/api/projects', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(project)
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to save project.');
+        }
+
+        const savedProject = await response.json();
 
 
         // ==========================================
         // ADD TO "DATABASE"
         // ==========================================
 
-        window.gridguardProjects.push(project);
+        window.gridguardProjects.push(savedProject);
 
 
         console.log('Project added:', project);
@@ -180,10 +183,10 @@ form.addEventListener('submit', async (e) => {
         // ADD TO MAIN MAP
         // ==========================================
 
-        window.addProjectToMap(project);
+        window.addProjectToMap(savedProject);
 
 
-        window.addProjectToList(project);
+        window.addProjectToList(savedProject);
 
 
         // ==========================================

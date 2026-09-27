@@ -7,7 +7,7 @@
       "latitude": 33.7356,
       "longitude": -82.2119
     },
-    "type": "Hooks-Modoc 115kV/46kV Transmission Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2024-01"
   },
   {
@@ -18,7 +18,7 @@
       "latitude": 33.671,
       "longitude": -82.1729
     },
-    "type": "Stevens Creek-Hooks 115kV / LR Plumb Branch 46kV Rebuilds",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -29,7 +29,7 @@
       "latitude": 32.3235,
       "longitude": -80.9267
     },
-    "type": "Jasper-Okatie-Riverport 230kV Line and Substation",
+    "type": "Transmission Line",
     "start_date": "2025-01"
   },
   {
@@ -40,7 +40,7 @@
       "latitude": 32.343,
       "longitude": -80.9493
     },
-    "type": "Jasper-Okatie-Sherwood 230kV Line and Substation",
+    "type": "Transmission Line",
     "start_date": "2025-01"
   },
   {
@@ -51,7 +51,7 @@
       "latitude": 32.9293,
       "longitude": -79.8312
     },
-    "type": "Cainhoy-Hamlin Transmission Project",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -62,7 +62,7 @@
       "latitude": 32.8238,
       "longitude": -80.0526
     },
-    "type": "Queensboro-Johns Island-Church Creek Transmission Project",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -73,7 +73,7 @@
       "latitude": 33.6479,
       "longitude": -81.3643
     },
-    "type": "Wagener Connection Transmission Project",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -84,7 +84,7 @@
       "latitude": 32.0968,
       "longitude": -81.3618
     },
-    "type": "SOCO: Coleman - Meldrim 115kV Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   },
   {
@@ -95,7 +95,7 @@
       "latitude": 32.0946,
       "longitude": -81.1637
     },
-    "type": "SOCO: SAV: Goshen (Sav) - McIntosh 115kV Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2028-01"
   },
   {
@@ -106,7 +106,7 @@
       "latitude": 33.7515,
       "longitude": -84.7477
     },
-    "type": "GTC: Douglasville - Villa Rica 230kV Rebuild",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -117,7 +117,7 @@
       "latitude": 33.0965,
       "longitude": -82.0212
     },
-    "type": "MEAG: Goshen Area Strategic Solution (Waynesboro-Wilson 230kV switching station)",
+    "type": "Transmission Line",
     "start_date": "2030-01"
   },
   {
@@ -128,7 +128,7 @@
       "latitude": 33.7319,
       "longitude": -84.92
     },
-    "type": "GTC: Hickory Level - Villa Rica 230kV Line Reconductor",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -139,7 +139,7 @@
       "latitude": 34.0248,
       "longitude": -83.7353
     },
-    "type": "GTC: Doyle - Winder Primary 230kV Line Jumper Replacement",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -150,7 +150,7 @@
       "latitude": 33.8628,
       "longitude": -83.4081
     },
-    "type": "SOCO: Athena - East Watkinsville 115kV Rebuild",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -161,7 +161,7 @@
       "latitude": 32.607,
       "longitude": -84.937
     },
-    "type": "MEAG: Fortson Substation Modernization",
+    "type": "Substation Upgrade",
     "start_date": "2027-01"
   },
   {
@@ -172,7 +172,7 @@
       "latitude": 32.71,
       "longitude": -84.53
     },
-    "type": "GTC: Talbot Co #1 230kV Breaker Replacements",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   },
   {
@@ -183,7 +183,7 @@
       "latitude": 33.0531,
       "longitude": -84.1561
     },
-    "type": "GTC: Barnesville - South Griffin 230kV Project",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   },
   {
@@ -194,7 +194,7 @@
       "latitude": 33.2475,
       "longitude": -84.2708
     },
-    "type": "MEAG: New South Griffin 230/115kV Substation",
+    "type": "Substation Upgrade",
     "start_date": "2028-01"
   },
   {
@@ -205,7 +205,7 @@
       "latitude": 32.9,
       "longitude": -84.3333
     },
-    "type": "GTC: Barnesville Primary - Thomaston 230kV Rebuild",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   },
   {
@@ -216,7 +216,7 @@
       "latitude": 30.9052,
       "longitude": -84.5738
     },
-    "type": "MEAG: Brumbley Creek - South Bainbridge 115kV Rebuild",
+    "type": "Transmission Line",
     "start_date": "2028-01"
   },
   {
@@ -227,7 +227,7 @@
       "latitude": 30.8366,
       "longitude": -83.9788
     },
-    "type": "MEAG: Thomasville 230/115kV Autobank Replacement",
+    "type": "Transmission Line",
     "start_date": "2028-01"
   },
   {
@@ -238,7 +238,7 @@
       "latitude": 33.2936,
       "longitude": -83.9625
     },
-    "type": "GTC: Jackson 115kV Bus and Jumper Upgrades",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -249,7 +249,7 @@
       "latitude": 31.8661,
       "longitude": -82.5994
     },
-    "type": "GTC: Replace 230/115kV Auto Transformers at South Hazlehurst",
+    "type": "Substation Upgrade",
     "start_date": "2027-01"
   },
   {
@@ -260,7 +260,7 @@
       "latitude": 32.9819,
       "longitude": -82.8097
     },
-    "type": "SOCO: Sandersville #1 - Wadley Primary 115kV Rebuild",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -271,7 +271,7 @@
       "latitude": 32.3969,
       "longitude": -80.5762
     },
-    "type": "Frogmore-St. Helena 115kV Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2024-01"
   },
   {
@@ -282,7 +282,7 @@
       "latitude": 32.2371,
       "longitude": -80.8604
     },
-    "type": "Okatie-Bluffton 115kV Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2022-01"
   },
   {
@@ -293,7 +293,7 @@
       "latitude": 36.6031,
       "longitude": -92.4283
     },
-    "type": "Gainesville #2 - Bull Shoals 161kV Transmission Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -304,7 +304,7 @@
       "latitude": 38.2362,
       "longitude": -85.5188
     },
-    "type": "Middletown 138kV Terminal Equipment Replacement",
+    "type": "Transmission Line",
     "start_date": "2028-01"
   },
   {
@@ -315,7 +315,7 @@
       "latitude": 36.7631,
       "longitude": -83.6994
     },
-    "type": "Pineville SW - Artemus 161kV Terminal Equipment Replacement",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -326,7 +326,7 @@
       "latitude": 32.1292,
       "longitude": -85.7142
     },
-    "type": "PS: Union Springs 115kV Switching Station Construct",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   },
   {
@@ -337,7 +337,7 @@
       "latitude": 30.2894,
       "longitude": -85.6406
     },
-    "type": "PS: Gaskin - Southport 115kV Transmission Line Construct",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -348,7 +348,7 @@
       "latitude": 34.6868,
       "longitude": -80.7037
     },
-    "type": "Lancaster Main - Monroe Main 100kV Transmission Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -359,7 +359,7 @@
       "latitude": 34.9889,
       "longitude": -80.5497
     },
-    "type": "Lancaster Main - Monroe Main 100kV Transmission Line Rebuild (Monroe endpoint)",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -370,7 +370,7 @@
       "latitude": 35.4103,
       "longitude": -80.5853
     },
-    "type": "Harrisburg Tie - Concord Main 100kV Transmission Lines Rebuild",
+    "type": "Transmission Line",
     "start_date": "2028-01"
   },
   {
@@ -381,7 +381,7 @@
       "latitude": 34.8444,
       "longitude": -82.3856
     },
-    "type": "North Greenville Tie - Pisgah Tie 100kV Transmission Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2031-01"
   },
   {
@@ -392,7 +392,7 @@
       "latitude": 34.9517,
       "longitude": -81.9247
     },
-    "type": "Lawsons Fork Tie - West Spartanburg Tie 100kV Transmission Lines Install RAS",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -403,7 +403,7 @@
       "latitude": 35.2903,
       "longitude": -81.5453
     },
-    "type": "Shelby Tie 230/100/44kV Autotransformer Replacement",
+    "type": "Substation Upgrade",
     "start_date": "2027-01"
   },
   {
@@ -414,7 +414,7 @@
       "latitude": 33.0367,
       "longitude": -85.0316
     },
-    "type": "SOCO: Corn Crib - LaGrange 115kV Reconductor",
+    "type": "Transmission Line",
     "start_date": "2028-01"
   },
   {
@@ -425,7 +425,7 @@
       "latitude": 33.6598,
       "longitude": -85.8316
     },
-    "type": "SOCO: Anniston - Bynum 115kV TL Upgrade",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -436,7 +436,7 @@
       "latitude": 32.4074,
       "longitude": -87.0211
     },
-    "type": "SOCO: Demopolis - Selma 115kV TL Reconductor/Upgrade",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   },
   {
@@ -447,7 +447,7 @@
       "latitude": 33.2098,
       "longitude": -87.5692
     },
-    "type": "SOCO: South Tuscaloosa - 31st Avenue 115kV TL Reconductor",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   },
   {
@@ -458,7 +458,7 @@
       "latitude": 33.4048,
       "longitude": -82.6607
     },
-    "type": "MEAG: Ray Place Rd - Warrenton Primary 115kV Reconductor",
+    "type": "Transmission Line",
     "start_date": "2027-01"
   },
   {
@@ -469,7 +469,7 @@
       "latitude": 34.3535,
       "longitude": -82.9346
     },
-    "type": "GTC: Hartwell Dam - Hartwell Energy 230kV Series Reactors",
+    "type": "Transmission Line",
     "start_date": "2030-01"
   },
   {
@@ -480,7 +480,7 @@
       "latitude": 32.1988,
       "longitude": -83.1785
     },
-    "type": "GTC: Bonaire Primary - Eastman Primary 115kV Line Rebuild",
+    "type": "Transmission Line",
     "start_date": "2030-01"
   },
   {
@@ -491,7 +491,7 @@
       "latitude": 32.5535,
       "longitude": -83.8874
     },
-    "type": "MEAG: Aultman Road - Fort Valley #1 115kV Rebuild",
+    "type": "Transmission Line",
     "start_date": "2029-01"
   }
 ]

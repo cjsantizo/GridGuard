@@ -121,8 +121,8 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     font-family: system-ui, sans-serif;
 
-    max-width: 700px;   /* makes it narrower */
-    margin: 16px auto;  /* centers it on the page */
+    max-width: 700px;   /* this is center the project list*/
+    margin: 16px auto;  
   }
   
   #list-section h2 {
@@ -229,4 +229,92 @@
   justify-content: center;  
   max-width: 700px;         
   margin: 16px auto 0;      
+}
+
+/* ---------- DASHBOARD LAYOUT ---------- */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0 16px;
+  margin: 8px auto 16px;
+  max-width: 1300px;
+}
+
+.dashboard #list-section {
+  flex: 1;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* ---------- SIDE PANELS ---------- */
+.side-panel {
+  width: 240px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  color: #1d2733;
+}
+
+.side-panel h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.side-panel p {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.side-panel .dot {
+  margin-left: 0;
+  margin-top: 3px;
+}
+
+/* ---------- SUMMARY STATS ---------- */
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid #e3e8ee;
+}
+
+.stat .dot {
+  margin-top: 0;
+}
+
+.stat strong {
+  margin-left: auto;
+}
+
+.stat.total {
+  border-bottom: none;
+  font-weight: 600;
+}
+
+/* ---------- GRAY COLOR (no nearby project) ---------- */
+.dot.gray { background: #9aa5b1; }
+.project-pin.gray { background-color: #9aa5b1; }
+
+/* ---------- SMALL SCREENS: stack everything ---------- */
+@media (max-width: 1000px) {
+  .dashboard {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .side-panel,
+  .dashboard #list-section {
+      width: 100%;
+      max-width: 700px;
+  }
 }

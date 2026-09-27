@@ -64,9 +64,9 @@
             </label>
 
             <label>
-                Type
+                Your Work Type
                 <select id="f-type">
-                    <option value="">All</option>
+                    <option value="">Select your type</option>
                     <option value="Substation Upgrade">Substation Upgrade</option>
                     <option value="Transmission Line Extension">Transmission Line</option>
                     <option value="Grid Hardening">Grid Hardening</option>
@@ -243,9 +243,7 @@
             </div>
 
 
-            <!-- ========================= -->
-            <!-- PROJECT LOCATION          -->
-            <!-- ========================= -->
+           
 
             <div class="form-group">
 
@@ -362,19 +360,26 @@
 
     </dialog>
 
+    <div class="dashboard"> 
+        
+        <!--list-->
+        <section id="list-section">
 
-    <!-- ========================= -->
-    <!-- PROJECT LIST              -->
-    <!-- ========================= -->
+            <h2>Projects List</h2>
 
-    <section id="list-section">
+            <ul id="project-list">
+            </ul>
 
-        <h2>Projects List</h2>
+        </section>
 
-        <ul id="project-list">
-        </ul>
 
-    </section>
+        <aside class="side-panel">
+            <h3>Legend</h3>
+            <p><span class="dot green"></span> Nearby project, same type of work (can share crews and equipment)</p>
+            <p><span class="dot red"></span> Nearby project, different type of work</p>
+            <p><span class="dot gray"></span> No nearby project</p>
+        </aside>
+    </div>
 
 
     <!-- FORM JAVASCRIPT -->

@@ -5,22 +5,25 @@ let projectMap = null;
 let selectedCoordinates = null;
 let locationMarker = null;
 
+let modalProjectMarkers = [];
+
 
 // Open dialog
 document.getElementById('newProjectBtn').addEventListener('click', () => {
 
     dialog.showModal();
 
-    // Create the map the first time the dialog opens
     if (!projectMap) {
 
-        projectMap = L.map('projectMap').setView([40.7128, -74.0060], 10);
+        projectMap = L.map('projectMap')
+            .setView([39.8283, -98.5795], 4);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(projectMap);
 
-        // When the user clicks the map
+
+        // Clicking the map selects a new project location
         projectMap.on('click', (e) => {
 
             selectedCoordinates = {
@@ -28,21 +31,22 @@ document.getElementById('newProjectBtn').addEventListener('click', () => {
                 lng: e.latlng.lng
             };
 
-            // Display coordinates in the input
             document.getElementById('coordinates').value =
                 `${e.latlng.lat.toFixed(5)}, ${e.latlng.lng.toFixed(5)}`;
 
-            // Remove old marker
             if (locationMarker) {
                 locationMarker.remove();
             }
 
-            // Add marker at clicked location
-            locationMarker = L.marker(e.latlng).addTo(projectMap);
+            locationMarker = L.marker(e.latlng)
+                .addTo(projectMap);
         });
     }
 
-    // Leaflet needs this because the map was initially inside a hidden dialog
+    // Refresh project pins every time the modal opens
+    refreshModalProjectMarkers();
+
+    // Leaflet needs this because the map was inside a dialog
     setTimeout(() => {
         projectMap.invalidateSize();
     }, 100);
@@ -64,48 +68,179 @@ document.getElementById('cancelBtn').addEventListener('click', () => {
     dialog.close();
 });
 
+async function reverseGeocode(latitude, longitude) {
+
+    const response = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+    );
+
+    if (!response.ok) {
+        throw new Error('Reverse geocoding failed.');
+    }
+
+    const data = await response.json();
+
+    return {
+        city:
+            data.address.city ||
+            data.address.town ||
+            data.address.village ||
+            data.address.municipality ||
+            '',
+
+        state: data.address.state || ''
+    };
+}
+
 
 // Save
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
 
     e.preventDefault();
 
-    // Make sure the user selected a location
     if (!selectedCoordinates) {
         alert('Please select a location on the map.');
         return;
     }
 
-    const project = {
+    try {
 
-        company: document.getElementById('companyName').value,
+        // ==========================================
+        // GET FORM DATA
+        // ==========================================
 
-        name: document.getElementById('projectName').value,
+        const companyname =
+            document.getElementById('companyName').value;
 
-        type: document.getElementById('projectType').value,
+        const projectname =
+            document.getElementById('projectName').value;
 
-        state: document.getElementById('state').value,
+        const type =
+            document.getElementById('projectType').value;
 
-        startMonth: document.getElementById('startMonth').value,
+        const state =
+            document.getElementById('state').value;
 
-        startYear: document.getElementById('startYear').value,
+        const startMonth =
+            document.getElementById('startMonth').value;
 
-        // Save the coordinates
-        latitude: selectedCoordinates.lat,
+        const startYear =
+            document.getElementById('startYear').value;
 
-        longitude: selectedCoordinates.lng
-    };
 
-    console.log(project);
+        // ==========================================
+        // REVERSE GEOCODE
+        // ==========================================
 
-    form.reset();
+        const location = await reverseGeocode(
+            selectedCoordinates.lat,
+            selectedCoordinates.lng
+        );
 
-    selectedCoordinates = null;
 
-    if (locationMarker) {
-        locationMarker.remove();
-        locationMarker = null;
+        // ==========================================
+        // CREATE PROJECT
+        // ==========================================
+
+        const project = {
+
+            id: Date.now(),
+
+            projectname: projectname,
+
+            companyname: companyname,
+
+            type: type,
+
+            state: state,
+
+            city: location.city,
+
+            latitude: selectedCoordinates.lat,
+
+            longitude: selectedCoordinates.lng,
+
+            startMonth: startMonth,
+
+            startYear: Number(startYear)
+        };
+
+
+        // ==========================================
+        // ADD TO "DATABASE"
+        // ==========================================
+
+        window.gridguardProjects.push(project);
+
+
+        console.log('Project added:', project);
+
+
+        // ==========================================
+        // ADD TO MAIN MAP
+        // ==========================================
+
+        window.addProjectToMap(project);
+
+
+        window.addProjectToList(project);
+
+
+        // ==========================================
+        // CLEAN UP
+        // ==========================================
+
+        form.reset();
+
+        selectedCoordinates = null;
+
+        if (locationMarker) {
+            locationMarker.remove();
+            locationMarker = null;
+        }
+
+        dialog.close();
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            'There was a problem adding the project. Please try again.'
+        );
     }
 
-    dialog.close();
 });
+
+function refreshModalProjectMarkers() {
+
+    // Remove existing project markers
+    modalProjectMarkers.forEach(marker => {
+        projectMap.removeLayer(marker);
+    });
+
+    modalProjectMarkers = [];
+
+    // Get the current projects
+    const existingProjects = window.gridguardProjects || [];
+
+    existingProjects.forEach(project => {
+
+        const marker = L.marker([
+            project.latitude,
+            project.longitude
+        ]);
+
+        marker.bindPopup(`
+            <b>${project.projectname}</b><br>
+            ${project.companyname}<br>
+            ${project.type}<br>
+            ${project.city}, ${project.state}<br>
+            Start: ${project.startMonth}/${project.startYear}
+        `);
+
+        marker.addTo(projectMap);
+
+        modalProjectMarkers.push(marker);
+    });
+}

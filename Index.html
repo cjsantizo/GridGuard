@@ -37,32 +37,6 @@
 
     <div id="map" style="height: 400px;"></div>
 
-    <script>
-        const map = L.map('map').setView([40.7128, -74.0060], 12);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-
-        const markers = L.markerClusterGroup();
-
-        const points = [
-            [40.7128, -74.0060, "Point A"],
-            [40.7130, -74.0055, "Point B"],
-            [40.7135, -74.0050, "Point C"],
-            [40.7300, -73.9350, "Point D"]
-        ];
-
-        points.forEach(([lat, lng, label]) => {
-            markers.addLayer(
-                L.marker([lat, lng]).bindPopup(label)
-            );
-        });
-
-        map.addLayer(markers);
-    </script>
-
-
     <!-- ========================= -->
     <!-- FILTER                    -->
     <!-- ========================= -->
@@ -404,82 +378,6 @@
         <h2>Projects List</h2>
 
         <ul id="project-list">
-
-            <li class="project-row">
-
-                <div class="row-info">
-
-                    <div class="row-title">
-                        <b>Duke Energy</b> — Line rebuild
-                    </div>
-
-                    <div class="row-meta">
-                        SC · 2027-03-01 → 2027-10-01
-                    </div>
-
-                </div>
-
-                <span class="dot red"></span>
-
-            </li>
-
-
-            <li class="project-row">
-
-                <div class="row-info">
-
-                    <div class="row-title">
-                        <b>Georgia Power</b> — Substation upgrade
-                    </div>
-
-                    <div class="row-meta">
-                        GA · 2027-05-01 → 2027-12-01
-                    </div>
-
-                </div>
-
-                <span class="dot red"></span>
-
-            </li>
-
-
-            <li class="project-row">
-
-                <div class="row-info">
-
-                    <div class="row-title">
-                        <b>Georgia Power</b> — New 230 kV line
-                    </div>
-
-                    <div class="row-meta">
-                        GA · 2028-01-01 → 2028-09-01
-                    </div>
-
-                </div>
-
-                <span class="dot yellow"></span>
-
-            </li>
-
-
-            <li class="project-row">
-
-                <div class="row-info">
-
-                    <div class="row-title">
-                        <b>Duke Energy</b> — Transformer replacement
-                    </div>
-
-                    <div class="row-meta">
-                        NC · 2027-02-01 → 2027-06-01
-                    </div>
-
-                </div>
-
-                <span class="dot green"></span>
-
-            </li>
-
         </ul>
 
     </section>
@@ -487,6 +385,8 @@
 
     <!-- FORM JAVASCRIPT -->
     <script src="js/form.js" defer></script>
+    <script src="js/map.js" defer></script>
+
 
 </body>
 </html>

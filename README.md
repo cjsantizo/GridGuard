@@ -1,196 +1,38 @@
-# ⚡ GridGuard
+# GridGuard
 
-**GridGuard** is a hackathon project built for the **Sperry Tech Challenge** that helps identify potential overlaps between utility construction projects.
+GridGuard is a hackathon project built for the Sperry Tech Challenge. The goal of the project is to help compare utility construction projects and make it easier to see where projects may be happening near each other.
 
-The platform compares publicly available power-grid construction plans and highlights projects that may overlap by **location** and **time**, helping utilities identify opportunities for better coordination, resource sharing, and scheduling.
+The website displays utility projects on an interactive map and allows the user to filter projects by things like state, city, project type, month, and year. Users can also click on a project in the list and the map will zoom directly to that project.
 
----
+GridGuard also allows users to add a new project. The user enters the company name, project name, type, state, and start date, then selects the project location directly on the map. The location is used to get the city information and the new project is saved to the database.
 
-## 🎯 The Problem
+## How it works
 
-Utility companies such as Georgia Power, Duke Energy, and Dominion Energy plan infrastructure projects years in advance, including:
+The frontend was built using HTML, CSS, and JavaScript. Leaflet and OpenStreetMap are used for displaying the project locations on the map.
 
-- Transmission line construction
-- Line rebuilds
-- Substation upgrades
-- Storm-hardening projects
-- Renewable-energy connections
+The backend was built with Python using Flask. It connects the frontend to the database and handles getting existing projects and adding new projects.
 
-Utilities often plan projects independently, which can make it difficult to identify nearby work being performed by neighboring companies.
+For the database, we used a cloud PostgreSQL database with Supabase as the provider. The project information is stored in a `projects` table and the Flask backend communicates with Supabase when projects need to be loaded or added.
 
-When projects happen close together or during similar time periods, utilities may miss opportunities to coordinate crews, equipment, outages, and construction schedules.
+## Main Features
 
----
+- View utility construction projects on a map
+- Filter projects by state, city, project type, month, and year
+- Click a project to zoom to its location on the map
+- View project information such as the company, location, type, and start date
+- Add new utility projects
+- Pick the location of a new project directly from the map
+- Save new projects to the PostgreSQL database
+- Load project information from the database through the Flask backend
 
-## 💡 Our Solution
+## Tech Used
 
-GridGuard compares utility construction projects and identifies potential overlaps based on two main factors:
-
-### 📍 Location Overlap
-Projects that are geographically close to one another.
-
-### 📅 Time Overlap
-Projects scheduled to begin during similar time periods.
-
-Projects that overlap in **both location and time** receive the strongest warning.
-
----
-
-## 🗺️ Features
-
-- Interactive map displaying utility projects
-- Project markers based on overlap status
-  - 🔴 **Red:** Strong overlap
-  - 🟡 **Yellow:** Possible overlap / close call
-  - 🟢 **Green:** No significant overlap
-- Filter projects by:
-  - State
-  - City
-  - Project type
-  - Start month
-  - Start year
-- Dynamic project list that updates with filters
-- Click a project to zoom to its location
-- Add new utility projects through the **New Project** form
-- Select project locations directly from the map
-- Automatically compare new projects against existing projects
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
 - HTML
 - CSS
 - JavaScript
+- Python
+- Flask
+- PostgreSQL
+- Supabase
 - Leaflet
 - OpenStreetMap
-
-### Backend
-- Python
-- FastAPI
-- SQLite
-
-### Overlap Detection
-
-GridGuard evaluates projects using:
-
-- Geographic distance between project coordinates
-- Project start dates
-- Location and time proximity
-
-These factors are used to classify projects by their potential level of overlap.
-
----
-
-## 📊 Dataset
-
-GridGuard currently contains **45 real utility construction projects** gathered from publicly available utility and regional planning documents.
-
-No fabricated or placeholder projects are included in the core dataset.
-
-### Dataset Composition
-
-| Company | Projects | States Covered |
-|---|---:|---|
-| Georgia Power | 25 | GA, AL |
-| Dominion Energy South Carolina | 9 | SC |
-| Duke Energy | 6 | NC, SC |
-| LG&E/KU | 2 | KY |
-| PowerSouth | 2 | AL, FL |
-| AECI | 1 | MO |
-| **Total** | **45** | |
-
----
-
-## 📚 Data Sources
-
-### 2026 SERTP Preliminary Expansion Plan Report — Non-CEII
-
-Regional transmission planning information covering multiple utilities throughout the southeastern United States.
-
-Source: **Southeastern Regional Transmission Planning (SERTP)**
-
-### Dominion Energy Power Line Projects
-
-Public project pages containing information about Dominion Energy infrastructure projects and construction schedules.
-
-Source: **Dominion Energy**
-
----
-
-## ⚠️ Dataset Limitations
-
-### Project Coordinates
-
-Coordinates represent the **city, town, or general project area** rather than exact transmission-line or substation locations.
-
-Precise coordinates for critical electrical infrastructure may not be publicly available.
-
-### Coordinate Confidence
-
-Coordinate accuracy varies by project.
-
-Some locations were individually verified, while others represent the center point of the city or community associated with the project.
-
-### Project Dates
-
-Some projects include publicly documented construction dates.
-
-When a source provided only an **in-service year**, an approximate project start date was added so the project could be used by the overlap-detection system.
-
-These estimated dates should not be interpreted as official construction schedules.
-
----
-
-## 🌎 Why GridGuard Matters
-
-Improved coordination between utilities could help organizations:
-
-- Coordinate specialized construction crews
-- Share or better schedule expensive equipment
-- Reduce conflicting outages
-- Identify nearby projects that could potentially be coordinated
-- Improve regional infrastructure planning
-- Make public utility construction plans easier to visualize
-
-GridGuard demonstrates how publicly available infrastructure data can be transformed into a simple visual planning tool for identifying potential coordination opportunities.
-
----
-
-## 🚀 Running GridGuard Locally
-
-### 1. Clone the Repository
-
-```bash
-git clone <your-repository-url>
-cd GridGuard
-```
-
-### 2. Install Backend Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Start the Backend
-
-```bash
-python backend/app.py
-```
-
-### 4. Open the Frontend
-
-Open the frontend in your browser or run it using your preferred local development server.
-
----
-
-## 👥 Team
-
-Built during the **Sperry Tech Challenge Hackathon**.
-
----
-
-## 📌 Project Status
-
-GridGuard is currently a hackathon prototype designed to demonstrate how geographic and scheduling data can be used to identify potential overlaps between utility infrastructure projects.

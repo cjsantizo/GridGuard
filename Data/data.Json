@@ -8,8 +8,7 @@
       "longitude": -82.2119
     },
     "type": "Hooks-Modoc 115kV/46kV Transmission Line Rebuild",
-    "duration": "January 2024 to December 2027",
-    "start_date": "2024-01-01"
+    "start_date": "2024-01"
   },
   {
     "city": "Clarks Hill",
@@ -20,8 +19,7 @@
       "longitude": -82.1729
     },
     "type": "Stevens Creek-Hooks 115kV / LR Plumb Branch 46kV Rebuilds",
-    "duration": "January 2027 to December 2028",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Okatie",
@@ -32,8 +30,7 @@
       "longitude": -80.9267
     },
     "type": "Jasper-Okatie-Riverport 230kV Line and Substation",
-    "duration": "January 2025 to December 2026",
-    "start_date": "2025-01-01"
+    "start_date": "2025-01"
   },
   {
     "city": "Jasper",
@@ -44,8 +41,7 @@
       "longitude": -80.9493
     },
     "type": "Jasper-Okatie-Sherwood 230kV Line and Substation",
-    "duration": "January 2025 to December 2026",
-    "start_date": "2025-01-01"
+    "start_date": "2025-01"
   },
   {
     "city": "Cainhoy",
@@ -56,8 +52,7 @@
       "longitude": -79.8312
     },
     "type": "Cainhoy-Hamlin Transmission Project",
-    "duration": "January 2027 to December 2028",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Church Creek",
@@ -68,8 +63,7 @@
       "longitude": -80.0526
     },
     "type": "Queensboro-Johns Island-Church Creek Transmission Project",
-    "duration": "January 2027 to December 2028",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Wagener",
@@ -80,8 +74,7 @@
       "longitude": -81.3643
     },
     "type": "Wagener Connection Transmission Project",
-    "duration": "January 2027 to December 2028",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Meldrim",
@@ -92,8 +85,7 @@
       "longitude": -81.3618
     },
     "type": "SOCO: Coleman - Meldrim 115kV Line Rebuild",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   },
   {
     "city": "Savannah",
@@ -104,8 +96,7 @@
       "longitude": -81.1637
     },
     "type": "SOCO: SAV: Goshen (Sav) - McIntosh 115kV Line Rebuild",
-    "duration": "January to December",
-    "start_date": "2028-01-01"
+    "start_date": "2028-01"
   },
   {
     "city": "Douglasville",
@@ -116,8 +107,7 @@
       "longitude": -84.7477
     },
     "type": "GTC: Douglasville - Villa Rica 230kV Rebuild",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Waynesboro",
@@ -128,8 +118,7 @@
       "longitude": -82.0212
     },
     "type": "MEAG: Goshen Area Strategic Solution (Waynesboro-Wilson 230kV switching station)",
-    "duration": "January to December",
-    "start_date": "2030-01-01"
+    "start_date": "2030-01"
   },
   {
     "city": "Villa Rica",
@@ -140,8 +129,7 @@
       "longitude": -84.92
     },
     "type": "GTC: Hickory Level - Villa Rica 230kV Line Reconductor",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Winder",
@@ -152,8 +140,7 @@
       "longitude": -83.7353
     },
     "type": "GTC: Doyle - Winder Primary 230kV Line Jumper Replacement",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Watkinsville",
@@ -164,8 +151,7 @@
       "longitude": -83.4081
     },
     "type": "SOCO: Athena - East Watkinsville 115kV Rebuild",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Fortson",
@@ -176,8 +162,7 @@
       "longitude": -84.937
     },
     "type": "MEAG: Fortson Substation Modernization",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Talbotton",
@@ -188,8 +173,7 @@
       "longitude": -84.53
     },
     "type": "GTC: Talbot Co #1 230kV Breaker Replacements",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   },
   {
     "city": "Barnesville",
@@ -200,8 +184,7 @@
       "longitude": -84.1561
     },
     "type": "GTC: Barnesville - South Griffin 230kV Project",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   },
   {
     "city": "Griffin",
@@ -212,8 +195,7 @@
       "longitude": -84.2708
     },
     "type": "MEAG: New South Griffin 230/115kV Substation",
-    "duration": "January to December",
-    "start_date": "2028-01-01"
+    "start_date": "2028-01"
   },
   {
     "city": "Thomaston",
@@ -224,8 +206,7 @@
       "longitude": -84.3333
     },
     "type": "GTC: Barnesville Primary - Thomaston 230kV Rebuild",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   },
   {
     "city": "Bainbridge",
@@ -236,8 +217,7 @@
       "longitude": -84.5738
     },
     "type": "MEAG: Brumbley Creek - South Bainbridge 115kV Rebuild",
-    "duration": "January to December",
-    "start_date": "2028-01-01"
+    "start_date": "2028-01"
   },
   {
     "city": "Thomasville",
@@ -248,8 +228,7 @@
       "longitude": -83.9788
     },
     "type": "MEAG: Thomasville 230/115kV Autobank Replacement",
-    "duration": "January to December",
-    "start_date": "2028-01-01"
+    "start_date": "2028-01"
   },
   {
     "city": "Jackson",
@@ -260,8 +239,7 @@
       "longitude": -83.9625
     },
     "type": "GTC: Jackson 115kV Bus and Jumper Upgrades",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Hazlehurst",
@@ -272,8 +250,7 @@
       "longitude": -82.5994
     },
     "type": "GTC: Replace 230/115kV Auto Transformers at South Hazlehurst",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Sandersville",
@@ -284,8 +261,7 @@
       "longitude": -82.8097
     },
     "type": "SOCO: Sandersville #1 - Wadley Primary 115kV Rebuild",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Frogmore",
@@ -296,8 +272,7 @@
       "longitude": -80.5762
     },
     "type": "Frogmore-St. Helena 115kV Line Rebuild",
-    "duration": "January 2024 to December 2027",
-    "start_date": "2024-01-01"
+    "start_date": "2024-01"
   },
   {
     "city": "Bluffton",
@@ -308,8 +283,7 @@
       "longitude": -80.8604
     },
     "type": "Okatie-Bluffton 115kV Line Rebuild",
-    "duration": "January 2022 to December 2025",
-    "start_date": "2022-01-01"
+    "start_date": "2022-01"
   },
   {
     "city": "Gainesville",
@@ -320,8 +294,7 @@
       "longitude": -92.4283
     },
     "type": "Gainesville #2 - Bull Shoals 161kV Transmission Line Rebuild",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Middletown",
@@ -332,8 +305,7 @@
       "longitude": -85.5188
     },
     "type": "Middletown 138kV Terminal Equipment Replacement",
-    "duration": "January to December",
-    "start_date": "2028-01-01"
+    "start_date": "2028-01"
   },
   {
     "city": "Pineville",
@@ -344,8 +316,7 @@
       "longitude": -83.6994
     },
     "type": "Pineville SW - Artemus 161kV Terminal Equipment Replacement",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Union Springs",
@@ -356,8 +327,7 @@
       "longitude": -85.7142
     },
     "type": "PS: Union Springs 115kV Switching Station Construct",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   },
   {
     "city": "Southport",
@@ -368,8 +338,7 @@
       "longitude": -85.6406
     },
     "type": "PS: Gaskin - Southport 115kV Transmission Line Construct",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Lancaster",
@@ -380,8 +349,7 @@
       "longitude": -80.7037
     },
     "type": "Lancaster Main - Monroe Main 100kV Transmission Line Rebuild",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Monroe",
@@ -392,8 +360,7 @@
       "longitude": -80.5497
     },
     "type": "Lancaster Main - Monroe Main 100kV Transmission Line Rebuild (Monroe endpoint)",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Concord",
@@ -404,8 +371,7 @@
       "longitude": -80.5853
     },
     "type": "Harrisburg Tie - Concord Main 100kV Transmission Lines Rebuild",
-    "duration": "January to December",
-    "start_date": "2028-01-01"
+    "start_date": "2028-01"
   },
   {
     "city": "Greenville",
@@ -416,8 +382,7 @@
       "longitude": -82.3856
     },
     "type": "North Greenville Tie - Pisgah Tie 100kV Transmission Line Rebuild",
-    "duration": "January to December",
-    "start_date": "2031-01-01"
+    "start_date": "2031-01"
   },
   {
     "city": "Spartanburg",
@@ -428,8 +393,7 @@
       "longitude": -81.9247
     },
     "type": "Lawsons Fork Tie - West Spartanburg Tie 100kV Transmission Lines Install RAS",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Shelby",
@@ -440,8 +404,7 @@
       "longitude": -81.5453
     },
     "type": "Shelby Tie 230/100/44kV Autotransformer Replacement",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "LaGrange",
@@ -452,8 +415,7 @@
       "longitude": -85.0316
     },
     "type": "SOCO: Corn Crib - LaGrange 115kV Reconductor",
-    "duration": "January to December",
-    "start_date": "2028-01-01"
+    "start_date": "2028-01"
   },
   {
     "city": "Anniston",
@@ -464,8 +426,7 @@
       "longitude": -85.8316
     },
     "type": "SOCO: Anniston - Bynum 115kV TL Upgrade",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Selma",
@@ -476,8 +437,7 @@
       "longitude": -87.0211
     },
     "type": "SOCO: Demopolis - Selma 115kV TL Reconductor/Upgrade",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   },
   {
     "city": "Tuscaloosa",
@@ -488,8 +448,7 @@
       "longitude": -87.5692
     },
     "type": "SOCO: South Tuscaloosa - 31st Avenue 115kV TL Reconductor",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   },
   {
     "city": "Warrenton",
@@ -500,8 +459,7 @@
       "longitude": -82.6607
     },
     "type": "MEAG: Ray Place Rd - Warrenton Primary 115kV Reconductor",
-    "duration": "January to December",
-    "start_date": "2027-01-01"
+    "start_date": "2027-01"
   },
   {
     "city": "Hartwell",
@@ -512,8 +470,7 @@
       "longitude": -82.9346
     },
     "type": "GTC: Hartwell Dam - Hartwell Energy 230kV Series Reactors",
-    "duration": "January to December",
-    "start_date": "2030-01-01"
+    "start_date": "2030-01"
   },
   {
     "city": "Eastman",
@@ -524,8 +481,7 @@
       "longitude": -83.1785
     },
     "type": "GTC: Bonaire Primary - Eastman Primary 115kV Line Rebuild",
-    "duration": "January to December",
-    "start_date": "2030-01-01"
+    "start_date": "2030-01"
   },
   {
     "city": "Fort Valley",
@@ -536,7 +492,6 @@
       "longitude": -83.8874
     },
     "type": "MEAG: Aultman Road - Fort Valley #1 115kV Rebuild",
-    "duration": "January to December",
-    "start_date": "2029-01-01"
+    "start_date": "2029-01"
   }
 ]
